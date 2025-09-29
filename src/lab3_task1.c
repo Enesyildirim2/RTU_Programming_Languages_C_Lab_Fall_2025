@@ -1,7 +1,7 @@
 /*
  * Lab 3, Task 1
  * Student Name, Student ID
- *
+ * ENES YILDIRIM 211ADB121
  * Implement array algorithms:
  *   - find minimum value
  *   - find maximum value
@@ -56,15 +56,30 @@ int array_min(int arr[], int size) {
 
 int array_max(int arr[], int size) {
     // TODO: return largest element
-    return 0; // placeholder
+    int my_max = INT_MIN;
+    for (int i=0;i<size;i++) {
+        if (my_max < arr[i]) {
+            my_max = arr[i];
+        }
+    }
+    return my_max; // placeholder
 }
 
 int array_sum(int arr[], int size) {
     // TODO: return sum of elements
-    return 0; // placeholder
+    int a = 0;    
+    for (int i=0;i<size;i++) {
+        a += arr[i];
+    }
+    return a; // placeholder
 }
 
 float array_avg(int arr[], int size) {
     // TODO: return average as float
-    return 0.0f; // placeholder
+    float b = 0;
+    for (int i=0;i<size;i++) {
+        b += arr[i];
+    }
+    float c = b / 5;
+    return c; // placeholder
 }
