@@ -38,7 +38,9 @@ int main(void) {
 
 // Implement functions below
 void swap(int *x, int *y) {
-
+    int c = *x;
+    *x = *y;
+    *y = c;
 
 
 
@@ -47,4 +49,5 @@ void swap(int *x, int *y) {
 
 void modify_value(int *x) {
     // TODO: multiply value by 2
+    *x = *x * 2;
 }
